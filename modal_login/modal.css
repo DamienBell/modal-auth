@@ -1,0 +1,39 @@
+#mask {
+  position:absolute;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+}
+
+#boxes .window {
+  position:absolute;
+  display:none;
+  z-index:9999;
+  padding:20px;
+}
+
+/* Customize your modal window here, you can add background image too */
+#boxes #dialog {
+  width:375px;
+  height:203px;
+}
+
+.opt{
+    color: #666;
+    min-height: 75px;
+    margin: 10px;
+    padding: 5px;
+
+    background-color: #FFFFFF;
+
+    border-width:1px;
+    border-color:#0dcfff;
+
+    border-radius:15px;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+
+    box-shadow:0px 5px 10px #1fe2ff;
+    -moz-box-shadow:0px 5px 10px #1fe2ff;
+    -webkit-box-shadow:0px 5px 10px #1fe2ff;
+}
