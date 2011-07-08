@@ -51,7 +51,7 @@ $(document).ready(function(){
 
 ////modal auth stuff
 function logByModal(){
-    var url= siteRoot+"/auth_api?command=login";
+    var url= siteRoot+"/auth_api/login";
     var data= $('#login_modal_form').serialize();
 
     $.post(url, data, function(json){
@@ -67,7 +67,7 @@ function logByModal(){
 }
 
 function joinByModal(){
-    var url= siteRoot+"/auth_api?command=join";
+    var url= siteRoot+"/auth_api/join";
     var data= $('#join_modal_form').serialize();
 
     $.post(url, data, function(json){
@@ -82,7 +82,7 @@ function joinByModal(){
 }
 
 function logoutByModal(){
-    var url= siteRoot+"/auth_api?command=logout";
+    var url= siteRoot+"/auth_api/logout";
     $.post(url, function(json){
         window.location.reload();
     });
